@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/landingpage.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+        <header id="atas" class="navbar-container">
+                <div class="logo">E-VOTE</div>
+                <nav class="nav-list">
+                    <ul>
+                        <li><a href="#beranda" class="nav-item">BERANDA</a></li>
+                        <li><a href="#kandidat" class="nav-item">KANDIDAT</a></li>
+                        <li><a href="#tata-cara" class="nav-item">TATA CARA</a></li>
+                        <li><a href="#pengumuman" class="nav-item">PENGUMUMAN</a></li>
+                        <li><a href="login.html" class="nav-item login-button">LOGIN</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main class="main-content">
+            <section id="beranda">
+                <div class="hero-content">
+                        <h1 class="parent-text">Mari gunakan hak suaramu <br> Untuk hari esok yang lebih baik!</h1>
+                        <p class="paragraf">E-Vote adalah website yang digunakan untuk memudahkan pemilih dalam menentukan para pemimpin di hari esok.</p>
+                        <a id="mulai" href="login.html" class="log-button">Ayo mulai!</a>
+                </div>
+                <div class="img-content">
+                    <img id="binainsani" src="assets/foto/binainsani.png" alt="Bina Insani University" class="hero-image">
+                </div>
+            </section>            
+            <section id="kandidat" >
+                <h2 class="judul">Kandidat</h2>
+                <div class="kandidat-list">
+                    <div class="card 1">
+                        <h3>Paslon 1</h3>
+                        <img src="assets/foto/image1.jpeg" alt="Paslon 01">
+                        <button class="visi-misi" id="paslon1">Visi Misi</button>
+                    </div>
+                    <div class="card 2">
+                        <h3>Paslon 2</h3>
+                        <img src="assets/foto/image2.jpeg" alt="Paslon 02">
+                        <button class="visi-misi" id="paslon2">Visi Misi</button>
+                    </div>
+                    <div class="card 3">
+                        <h3>Paslon 3</h3>
+                        <img src="assets/foto/image3.jpeg" alt="Paslon 03">
+                        <button class="visi-misi" id="paslon3">Visi Misi</button>
+                    </div>
+                </div>
+                <!-- Pop-up untuk Paslon 1 -->
+                <div id="popup1" class="popup">
+                    <div class="popup-content">
+                        <span id="closePopupBtn1" class="close">&times;</span>
+                        <h2>Visi dan Misi Paslon 1</h2> <br>
+                        <img src="assets/foto/image1.jpeg" alt="Foto Paslon 1" class="paslon-photo">
+                        <h3>Visi:</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        <h3>Misi:</h3>
+                        <ul>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Pop-up untuk Paslon 2 -->
+                <div id="popup2" class="popup">
+                    <div class="popup-content">
+                        <span id="closePopupBtn2" class="close">&times;</span>
+                        <h2>Visi dan Misi Paslon 2</h2> <br>
+                        <img src="assets/foto/image2.jpeg" alt="Foto Paslon 2" class="paslon-photo">
+                        <h3>Visi:</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        <h3>Misi:</h3>
+                        <ul>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Pop-up untuk Paslon 3 -->
+                <div id="popup3" class="popup">
+                    <div class="popup-content">
+                        <span id="closePopupBtn3" class="close">&times;</span>
+                        <h2>Visi dan Misi Paslon 3</h2> <br>
+                        <img src="assets/foto/image3.jpeg" alt="Foto Paslon 3" class="paslon-photo">
+                        <h3>Visi:</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        <h3>Misi:</h3>
+                        <ul>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="tata-cara" >
+                <h2 class="judul">Tata Cara</h2>
+                <p>Perhatikan dengan baik ya!</p>
+                <div class="steps">
+                    <div class="step">Buka link url E-voting</div>
+                    <div class="step">Klik/tekan tombol login </div>
+                    <div class="step">Masukan Username dan Password</div>
+                    <div class="step">Pilih kandidat dengan klik/tekan tombol pilih lalu pilih 'Iya'</div>
+                    <div class="step">Logout aplikasi, dengan klik/tekan tombol logout</div>
+                    <div class="step">Selamat! Anda telah berhasil memilih kandidat anda</div>
+                </div>
+                <div class="text-content">
+                    <div class="text-1">
+                        <p>Setelah kamu sudah membaca semuanya, <br>kamu sekarang bisa melakukan Voting!</p>
+                    </div>
+                    <div class="text-2">
+                        <a href="login.html" class="log-button">Ayo Mulai Voting!</a>
+                    </divc>
+                </div>
+            </section>
+            <section id="pengumuman" >
+                <h2 class="judul">Pengumuman</h2>
+                <p>coming soon...</p>
+            </section>      
+        </main>
+        <footer class="footer">
+            <p>&copy; PBO 2024</p>
+        </footer>
+        <script src="assets/js/landingpage.js"></script>
+</body>
+</html>

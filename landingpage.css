@@ -1,0 +1,314 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #B6C9E0;
+  min-height: 100vh;
+}
+
+
+/* mulai header navbar */
+header.navbar-container {
+  width: 100%;
+  padding: 16px 100px;
+  margin-inline: auto;
+  background-color: #024abd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.navbar-container .logo {
+  font-size: 2rem;
+  color: #fff;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list .login-button{
+    background-color: #FFF500;
+    border-radius: 15px;
+    color: #000;
+}
+
+header.navbar-container .nav-list li:hover .nav-item {
+  color: #FFF500;
+}
+header.navbar-container .nav-list li:hover .nav-item.login-button {
+  color: #000;
+}
+
+
+/* judul section */
+section .judul {
+  text-align: center;
+  font-size: 54px;
+  color: #004392;
+  padding-top: 35px;
+}
+
+section#pengumuman .judul {
+  color: #fff;
+}
+
+/* section beranda */
+#beranda {
+  background-image: linear-gradient(to bottom left, #024abd, #024abd, #024abd, white, white);
+  width: 100%;
+  height: 550px;
+  /* position: relative; */
+  display: flex;
+  margin-inline: auto;
+  justify-content: space-around;
+}
+
+#beranda .hero-content { 
+  order: 2;
+  flex-grow: 7;
+  padding-top: 50px;
+  padding-right:100px ;
+  text-align: right;
+} 
+
+#beranda .hero-content h1{ 
+  font-size: 3vmax;
+  color: #ffff00;
+} 
+#beranda .hero-content .paragraf { 
+  color: #fff;
+}
+#beranda .hero-content a { 
+  margin-top: 30px;
+}
+
+#beranda .img-content {
+  align-items: flex-end;
+  order: 1;
+  flex-grow: 3;
+  padding-top: 175px;
+  /* margin-bottom: -6px; */
+}
+
+.hero-image {
+  width: 500px;
+  height: auto;
+}
+
+.hero-image #binainasni {
+  vertical-align: text-bottom;
+}
+
+/* Section kandidat */
+#kandidat {
+  background-image: linear-gradient(0deg, #024abd, #F0F8FF);
+  text-align: center;
+}
+
+.kandidat-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 40px 40px 40px;
+}
+
+#kandidat .card {
+  width: 300px;
+  max-height: 350px;
+  margin: 70px 0;
+  /* border: 1px solid #ccc; */
+  text-align: center;
+  /* background-color: #f2f2f2; */
+}
+
+#kandidat .card h3 {
+  font-size: 18px;
+}
+
+#kandidat .card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin: 5px 0px;
+  border: 2px solid #fff;
+  box-shadow: 8px 10px 8px #3538ee;
+}
+
+#kandidat img {
+  width: 150px;
+  height: auto;
+}
+
+#kandidat .visi-misi {
+  width: 30%;
+  padding: 5px 0px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background-color: #FFF500;
+  border: 0px;
+  border-radius: 4px;
+  font-weight: 550;
+}
+
+/* section Tata Cara */
+#tata-cara {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+#tata-cara .steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 0 70px;
+}
+
+#tata-cara .steps .step {
+  background-color: #004392;
+  width: 30px;
+  color: #FFF500;
+  padding: 20px 5px;
+  border-radius: 10px;
+  margin: 35px 20px;
+  flex-basis: 30%;
+  text-align: center; 
+}
+
+#tata-cara .text-content {
+  display: flex;
+  margin-inline: auto;
+  padding: 40px 90px 50px 90px;
+}
+
+#tata-cara .text-content .text-1 {
+  flex-grow: 5;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+}
+#tata-cara .text-content .text-2 {
+  flex-grow: 5;
+  text-align: right;
+}
+
+/* section pengumuman */
+ #pengumuman{
+  background-image: linear-gradient(180deg, blue, #0000c2, #0000bc, #00008f, #00008B );
+  color: #fff;
+  text-align: center;
+  height: 600px; 
+}
+
+#pengumuman p {
+  margin-top: 200px;
+}
+
+/* footer */
+.footer {
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+}
+
+
+/* login button */
+.log-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #FFF500;
+  color: #000;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+
+/* Gaya dasar untuk pop-up */
+.popup {
+  display: none;
+  /* Mulai dengan pop-up yang tersembunyi */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Latar belakang transparan */
+}
+
+/* Style untuk konten pop-up */
+.popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  /* Mengurangi margin atas untuk mengakomodasi gambar */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  /* Lebar maksimum */
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  /* Tengah-kan konten */
+}
+
+/* Style untuk tombol close (x) */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style untuk foto paslon */
+.paslon-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* Menambahkan radius untuk tampilan yang lebih lembut */
+  margin-bottom: 20px;
+  /* Ruang di bawah foto */
+}
