@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #B6C9E0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* mulai header navbar */
+header.navbar-container {
+    width: 100%;
+    padding-block: 1rem;
+    padding-inline: 6rem;
+    margin-inline: auto;
+    background-color: #024abd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+header.navbar-container .logo {
+    font-size: 2rem;
+    color: #fff;
+}
+
+header.navbar-container .nav-list ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list .login-button {
+    background-color: #FFF500;
+    border-radius: 15px;
+    color: #000;
+}
+
+header.navbar-container .nav-list li:hover .nav-item {
+    color: #FFF500;
+}
+
+header.navbar-container .nav-list li:hover .nav-item.login-button {
+    color: #000;
+}
+
+
+/* judul section */
+section .judul {
+    /* text-align: left; */
+    font-size: 30px;
+    color: #004392;
+    padding-top: 35px;
+}
+
+
+/* Section kandidat */
+#kandidat {
+    background-image: linear-gradient(0deg, #024abd, #F0F8FF);
+    text-align: center;
+}
+
+
+.kandidat-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 40px 40px 40px;
+}
+
+#kandidat .card {
+    width: 300px;
+    max-height: 350px;
+    margin: 70px 0;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+#kandidat .card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+#kandidat .card p {
+    padding: 10px 0 10px 0;
+}
+
+#kandidat .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#kandidat img {
+    width: 150px;
+    height: auto;
+}
+
+#kandidat .aksi  {
+    display: inline;
+} 
+
+#kandidat .aksi .btnpilih {
+    background-color: #04AA6D;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 550;
+    margin-bottom: 10px;
+    color: #fff;
+}
+#kandidat .aksi .btndetail {
+    background-color: #FFF500;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+
+/* footer */
+.footer {
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+/* log button */
+.log-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FFF500;
+    color: #000;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+}

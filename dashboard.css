@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* CSS untuk meletakkan ikon hamburger menu di sebelah kiri */
+
+header {
+    background-color: #024abd;
+    color: #fff;
+    padding: 1rem 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.header-right button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header-right .avatar {
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.logo img {
+    height: 40px;
+}
+
+
+.header-actions button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.container {
+    display: flex;
+    min-height: 84vh;
+}
+
+/* sidebar */
+#sidebar {
+    background-color: #fff;
+    flex: 20%;
+    padding: 20px 30px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#sidebar ul li a{
+    font-size: larger;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+/* dropdown */
+.active {
+    /* background-color: yellow; */
+    color: white;
+    /* width: 100%; */
+}
+
+.dropdown-btn {
+    font-size: large;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+#sidebar .dropdown .dropdown-menu li {
+    padding: 10px 10px;
+    margin: 0px;
+}
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+
+main {
+    flex: 80%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* card */
+.wrapper-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    /* Center the cards horizontally */
+    max-width: 1200px;
+    margin: 15px auto;
+    /* Center the dashboard within the page */
+}
+
+/* Card styles */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px ;
+    flex: 1 1 calc(20% - 40px);
+    /* Ensure cards are responsive */
+    min-width: 230px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography */
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.card p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+/* footer */
+.footer {
+    background-color: #dadada;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+/* logout pop up */
+.popuplogout {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popuplogout .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popuplogout .popup-content p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.popuplogout .popup-content button {
+    margin: 10px;
+}
+
+/* Gaya untuk tombol close */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}

@@ -1,0 +1,254 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* CSS untuk meletakkan ikon hamburger menu di sebelah kiri */
+
+header {
+  background-color: #024abd;
+  color: #fff;
+  padding: 1rem 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.header-right button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.header-right .avatar {
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.header-actions button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  min-height: 84vh;
+}
+
+/* sidebar */
+#sidebar {
+  background-color: #fff;
+  flex: 20%;
+  padding: 20px 30px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#sidebar ul li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#sidebar ul li a {
+  font-size: larger;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+/* dropdown */
+.active {
+  /* background-color: yellow; */
+  color: white;
+  /* width: 100%; */
+}
+
+.dropdown-btn {
+  font-size: large;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+#sidebar .dropdown .dropdown-menu li {
+  padding: 10px 10px;
+  margin: 0px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Main */
+main {
+  flex: 80%;
+  padding: 20px;
+  background-color: #f4f4f4f4;
+}
+
+.wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+/* data kelas */
+.data-kelas {
+  flex-grow: 5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+}
+
+.data-kelas #hapus {
+  background-color: rgb(248, 91, 91);
+  border: 0px;
+  border-radius: 3px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.tabel-kelas {
+  margin: 10px 10px 10px 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #c2c2c2;
+  text-align: center;
+  padding: 8px;
+}
+
+/* form tambah kelas */
+
+.tambah-kelas {
+  flex-grow: 3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  padding: 10px;
+  height: 140px;
+}
+
+.tambah-kelas form,label, .tambah {
+  margin-top: 10px;
+}
+
+.tambah-kelas input {
+  margin-top: 5px;
+}
+
+
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+
+.tambah-kelas .tambah {
+  background-color: #04AA6D;
+  color: #fff;
+  padding: 7px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.tambah-kelas .tambah:hover {
+  background-color: #049560;
+}
+
+/* footer */
+.footer {
+  background-color: #dadada;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+}
+
+/* pop up logout */
+.popuplogout {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popuplogout .popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popuplogout .popup-content p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.popuplogout .popup-content button {
+  margin: 10px;
+}
+
+/* Gaya untuk tombol close */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
