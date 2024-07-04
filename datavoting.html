@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Voting</title>
+    <link rel="stylesheet" href="/assets/css/datavoting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                E VOTE
+                <!-- <img src="logo.png" alt="eVote Logo"> -->
+            </div>
+            <!-- <button id="toggleSidebar">&#9776;</button> -->
+        </div>
+        <div class="header-right">
+                <img src="/assets/foto/admin_avatar.jpg" class="avatar" alt="Avatar">
+                <span class="nama">Admin</span>
+                <span class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <!-- <div class="dropdown-content">
+                        <a href="#">Ubah Password</a>
+                    </div> -->
+                </span>
+        </div>
+    </header>
+    <div class="container">
+        <aside id="sidebar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="datakelas.html">Data Kelas</a></li>
+                <li><a href="datapemilih.html">Data Pemilih</a></li>
+                <li><a href="datakandidat.html">Data Kandidat</a></li>
+                <li><a href="datavoting.html">Data Voting</a></li>
+                <li><a href="/landingpage.html">Logout</a></li>
+            </ul>
+        </aside>
+        <main>
+            <h3>Data Voting</h3>
+            <div class="wrapper-voting">
+                <div class="button">
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <button class="print"><a href="#">Print</a></button>
+                </div>
+                <div class="tabel-voting">
+                    <table>
+                        <tr>
+                            <th>No</th>
+                            <th>NIS</th>
+                            <th>Nama</th>
+                            <th>Waktu</th>
+                            <th>Memilih</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>20233300011</td>
+                            <td>Adit</td>
+                            <td>11-06-2024 0:45:00</td>
+                            <td>Paslon 1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2023340007</td>
+                            <td>Farhan</td>
+                            <td>11-06-2024 12:45:40</td>
+                            <td>Paslon 3</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>2023330007</td>
+                            <td>Nabil</td>
+                            <td>11-06-2024 12:45:40</td>
+                            <td>Paslon 2</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; PBO 2024</p>
+    </footer>
+    <script src="/assets/js/admin.js"></script>
+    <script src="https://kit.fontawesome.com/a32b0b22ba.js" crossorigin="anonymous"></script>
+</body>
+</html>

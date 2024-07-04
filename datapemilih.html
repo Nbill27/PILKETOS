@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pemilih</title>
+    <link rel="stylesheet" href="/assets/css/datapemilih.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                E VOTE
+                <!-- <img src="logo.png" alt="eVote Logo"> -->
+            </div>
+            <!-- <button id="toggleSidebar">&#9776;</button> -->
+        </div>
+        <div class="header-right">
+                <img src="/assets/foto/admin_avatar.jpg" class="avatar" alt="Avatar">
+                <span class="nama">Admin</span>
+                <span class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <!-- <div class="dropdown-content">
+                        <a href="#">Ubah Password</a>
+                    </div> -->
+                </span>
+        </div>
+    </header>
+    <div class="container">
+        <aside id="sidebar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="datakelas.html">Data Kelas</a></li>     
+                <li><a href="datapemilih.html">Data Pemilih</a></li>     
+                <li><a href="datakandidat.html">Data Kandidat</a></li>
+                <li><a href="datavoting.html">Data Voting</a></li>
+                <li><a href="#" id="logoutButton" >Logout</a></li>
+                <div id="popuplogout" class="popuplogout">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <p>Apakah Anda yakin ingin logout?</p>
+                        <button id="confirmLogout">Ya</button>
+                        <button id="cancelLogout">Tidak</button>
+                    </div>
+                </div>
+            </ul>
+        </aside>
+        <main>
+            <h3>Data Pemilih</h3> 
+            <div class="wrapper-pemilih">
+                <div class="button">
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button> 
+                    </form>
+                    <button id="btnTambahSiswa" class="tambah-siswa">Tambah Siswa</button>
+                    <div id="popupFormTambahSiswa" class="popup">
+                        <div class="popup-content">
+                            <h2>Tambah Siswa</h2>
+                            <form action="#">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label for="nama">Nama:</label><br>
+                                            <input type="text" id="nama" name="nama" required>
+                                        </td>
+                                        <td>
+                                            <label for="nis">NIS:</label><br>
+                                            <input type="text" id="nis" name="nis" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="kelas">Kelas:</label><br>
+                                            <select id="kelas" name="kelas" required>
+                                                <option value="">Pilih Kelas</option>
+                                                <option value="X">X</option>
+                                                <option value="XI">XI</option>
+                                                <option value="XII">XII</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <label for="jenisKelamin">Jenis Kelamin:</label><br>
+                                            <select id="jenisKelamin" name="jenisKelamin" required>
+                                                <option value="">Pilih Jenis Kelamin</option>
+                                                <option value="L">Laki-laki</option>
+                                                <option value="P">Perempuan</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>                
+                                <button type="submit">Simpan</button>
+                            </form>
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabel-pemilih">
+                    <table>
+                        <tr>
+                            <th>No</th>
+                            <th>NIS</th>
+                            <th>Nama</th>
+                            <th>Kelas</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>00446676</td>
+                            <td>Adit</td>
+                            <td>MI15</td>
+                            <td>Laki-laki</td>
+                            <td>Belum memilih</td>
+                            <td>
+                                <button class="edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button class="hapus"><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>004405067</td>
+                            <td>Nabil</td>
+                            <td>RPL15</td>
+                            <td>Laki-laki</td>
+                            <td>Belum memilih</td>
+                            <td>
+                                <button class="edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button class="hapus"><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>202333000</td>
+                            <td>Farhan</td>
+                            <td>MI98</td>
+                            <td>Perempuan</td>
+                            <td>Sudah memilih</td>
+                            <td>
+                                <button class="edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button class="hapus"><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; PBO 2024</p>
+    </footer>
+    <script src="/assets/js/admin.js"></script>
+    <script src="https://kit.fontawesome.com/a32b0b22ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

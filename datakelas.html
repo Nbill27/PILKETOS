@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Kelas</title>
+    <link rel="stylesheet" href="/assets/css/datakelas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                E VOTE
+                <!-- <img src="logo.png" alt="eVote Logo"> -->
+            </div>
+            <!-- <button id="toggleSidebar">&#9776;</button> -->
+        </div>
+        <div class="header-right">
+            <img src="/assets/foto/admin_avatar.jpg" class="avatar" alt="Avatar">
+            <span class="nama">Admin</span>
+            <span class="dropdown">
+                <button class="dropbtn">
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <!-- <div class="dropdown-content">
+                    <a href="#">Ubah Password</a>
+                </div> -->
+            </span>
+        </div>
+    </header>
+    <div class="container">
+        <aside id="sidebar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="datakelas.html">Data Kelas</a></li>                
+                <li><a href="datapemilih.html">Data Pemilih</a></li>                
+                <li><a href="datakandidat.html">Data Kandidat</a></li>
+                <li><a href="datavoting.html">Data Voting</a></li>
+                <li><a href="#" id="logoutButton">Logout</a></li>
+                <div id="popuplogout" class="popuplogout">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <p>Apakah Anda yakin ingin logout?</p>
+                        <button id="confirmLogout">Ya</button>
+                        <button id="cancelLogout">Tidak</button>
+                    </div>
+                </div>
+            </ul>
+        </aside>
+        <main>
+            <h3>Data Kelas</h3>
+            <div class="wrapper">
+                <div class="data-kelas">
+                    <div class="tabel-kelas">
+                        <table>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Kelas</th>
+                                <th>Aksi</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>TKJ A</td>
+                                <td>
+                                    <button id="hapus"><i class="fa-regular fa-trash-can"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>RPL </td>
+                                <td>
+                                    <button id="hapus"><i class="fa-regular fa-trash-can"></i></button>
+                                </td>                            
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>TKJ B</td>
+                                <td>
+                                    <button id="hapus"><i class="fa-regular fa-trash-can"></i></button>
+                                </td>                            
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>AK</td>
+                                <td>
+                                    <button id="hapus"><i class="fa-regular fa-trash-can"></i></button>
+                                </td>                            
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>TKR</td>
+                                <td>
+                                    <button id="hapus"><i class="fa-regular fa-trash-can"></i></button>
+                                </td>                           
+                             </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tambah-kelas">
+                    <h4>Tambah kelas</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="nama-kelas">Nama Kelas :</label>
+                            <input type="text" class="form-control" id="nama-kelas" >
+                        </div>
+                        <button type="submit" class="tambah">Simpan Data</button>
+                    </form>
+                </div>
+            </div>
+        </main>        
+    </div>
+    <footer class="footer">
+        <p>&copy; PBO 2024</p>
+    </footer>
+    <script src="/assets/js/admin.js"></script>
+    <script src="https://kit.fontawesome.com/a32b0b22ba.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

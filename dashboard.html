@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<header>
+    <div class="header-left">
+        <div class="logo">
+            E VOTE
+            <!-- <img src="logo.png" alt="eVote Logo"> -->
+        </div>
+        <!-- <button id="toggleSidebar">&#9776;</button> -->
+    </div>
+    <div class="header-right">
+        <img src="/assets/foto/admin_avatar.jpg" class="avatar"
+            alt="Avatar">
+        <span class="nama">Admin</span>
+        <span class="dropdown">
+            <button class="dropbtn">
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <!-- <div class="dropdown-content">
+                <a href="#">Ubah Password</a>
+            </div> -->
+        </span>
+    </div>
+</header>
+    <div class="container">
+        <aside id="sidebar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="datakelas.html">Data Kelas</a></li>
+                <li><a href="datapemilih.html">Data Pemilih</a></li>
+                <li><a href="datakandidat.html">Data Kandidat</a></li>
+                <li><a href="datavoting.html">Data Voting</a></li>
+                <li><a href="#" id="logoutButton">Logout</a></li>
+                <div id="popuplogout" class="popuplogout">
+                    <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <p>Apakah Anda yakin ingin logout?</p>
+                            <button id="confirmLogout">Ya</button>
+                            <button id="cancelLogout">Tidak</button>
+                    </div>
+                </div>
+            </ul>
+        </aside>
+        <main>
+
+        <h3>Dasboard</h3>    
+        <div class="wrapper-card">
+            <div class="card 1">
+                <h2>500</h2>
+                <p>Jumlah Pemilih</p>
+            </div>
+            <div class="card 2">
+                <h2>3</h2>
+                <p>Jumlah Kandidat</p>
+            </div>
+            <div class="card 3">
+                <h2>300</h2>
+                <p>Jumlah yang sudah memilih</p>
+            </div>
+            <div class="card 4">
+                <h2>200</h2>
+                <p>Jumlah yang belum memilih</p>
+            </div>
+        </div>
+        <div class="wrapper-chart">
+
+        </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; PBO 2024</p>
+    </footer>
+    <script src="/assets/js/admin.js"></script>
+    <script src="https://kit.fontawesome.com/a32b0b22ba.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Kandidat</title>
+    <link rel="stylesheet" href="/assets/css/datakandidat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                E VOTE
+                <!-- <img src="logo.png" alt="eVote Logo"> -->
+            </div>
+            <!-- <button id="toggleSidebar">&#9776;</button> -->
+        </div>
+        <div class="header-right">
+            <img src="/assets/foto/admin_avatar.jpg" class="avatar" alt="Avatar">
+            <span class="nama">Admin</span>
+            <span class="dropdown">
+                <button class="dropbtn">
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <!-- <div class="dropdown-content">
+                    <a href="#">Ubah Password</a>
+                </div> -->
+            </span>
+        </div>
+    </header>
+    <div class="container">
+        <aside id="sidebar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="datakelas.html">Data Kelas</a></li>            
+                <li><a href="datapemilih.html">Data Pemilih</a></li>            
+                <li><a href="datakandidat.html">Data Kandidat</a></li>
+                <li><a href="datavoting.html">Data Voting</a></li>
+                <li><a href="/landingpage.html">Logout</a></li>
+            </ul>
+        </aside>
+        <main>
+            <h3>Data Kandidat</h3>
+            <div class="wrapper-kandidat">
+                <div class="button">
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <button class="tambah"><a href="#">Tambah Kandidat</a></button>
+                </div>
+                <div class="tabel-kandidat">
+                    <table>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Ketua</th>
+                            <th>Nama Wakil</th>
+                            <th>Foto</th>
+                            <th>Aksi</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>James</td>
+                            <td>Endrik</td>
+                            <td><img src="" alt="pason1.jpg"></td>
+                            <td>
+                                <button class="detail"><i class="fa-solid fa-info"></i></button>
+                                <button class="edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button class="hapus"><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Asit</td>
+                            <td>Biasa</td>
+                            <td><img src="" alt="paslon2.jpg"></td>
+                            <td>
+                                <button class="detail"><i class="fa-solid fa-info"></i></button>
+                                <button class="edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button class="hapus"><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Luis</td>
+                            <td>Jeki</td>
+                            <td><img src="" alt="paslon3.jpg"></td>
+                            <td>
+                                <button class="detail"><i class="fa-solid fa-info"></i></button>
+                                <button class="edit"><i class="fa-regular fa-pen-to-square"></i></button>
+                                <button class="hapus"><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>&copy; PBO 2024</p>
+    </footer>
+    <script src="/assets/js/admin.js"></script>
+    <script src="https://kit.fontawesome.com/a32b0b22ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
